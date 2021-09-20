@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Student webpage containing homework 3, part 1.">
+    <title>Homework 3: Part 1</title>
+    <link rel="stylesheet" href="style3.css"/>
+    <link rel="stylesheet" href="style_hw3.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400&display=swap" rel="stylesheet">
+    <script src="hm3p1.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+</head>
+<body>
+
+<h1>CNIT 133 Homework 3 - Functions: Part 1</h1>
+<ul class = "parts">
+    <li><a href = "hm3p1.html">Part 1</a></li>
+    <li><a href = "hm3p2.html">Part 2</a></li>
+    <li><a href = "hm3p3.html">Part 3</a></li>
+    <li><a href = "hm3p4.html">Part 4</a></li>
+</ul>
+
+    <div id="links">
+                 <a class="active" href="https://fvargas78.github.io/hw1/">Main</a>
+                 <a class="active" href="https://fvargas78.github.io/hw2/">Homework2</a>
+                 <a class="active" href="https://fvargas78.github.io/hw3/">Homework3</a>
+                 <a class="active" href="https://fvargas78.github.io/hw4/">Homework4</a>
+                 <a class="active" href="https://fvargas78.github.io/hw5/">Homework5</a>
+                 <a class="active" href="https://fvargas78.github.io/hw6/">Homework6</a>
+                 <a class="active" href="https://fvargas78.github.io/hw7/">Homework7</a>
+                 <a class="active" href="https://fvargas78.github.io/hw8/">Homework8</a>
+</div>
+
+<h3> Student Grades</h3>
+<div id="content">
+    <form id="score_form" name="score_form">
+        <label for="homework">Homework Average: </label><input type="text" name="homework" id="homework" /><br><br>
+        <label for="midterm">Mid-term Exam Score: </label><input type="text" name="midterm" id="midterm"/><br><br>
+        <label for="final_exam">Final Exam Score: </label><input type="text" name="final_exam" id="final_exam"/><br><br>
+        <label for="participation">Participation: </label><input type="text" name="participation" id="participation"/><br><br>
+        <input type="button" value="Submit" class="submit" onclick="process()" />
+        <input type="button" value="Reset" id="reset" onclick="location.reload()"/><br><br>
+        <textarea id="result" rows="3"
+                  readonly></textarea>
+    </form>
+</div>
+
+</body>
+</html>
